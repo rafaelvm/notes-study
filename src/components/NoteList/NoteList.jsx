@@ -8,7 +8,7 @@ function NoteList({ notes }) {
       {notes.map((item, index) => {
         return (
           <li className="lista-notas_item" key={index}>
-            <NoteCard titulo={item.title} description={item.note} />
+            <NoteCard titulo={item.title} description={item.description} />
           </li>
         );
       })}

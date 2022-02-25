@@ -20,6 +20,7 @@ function Form() {
   function sendForm() {
     if (note.title && note.description) {
       setItemsList((prevState) => [...prevState, note]);
+      setNote({ title: "", description: "" });
     }
   }
 
