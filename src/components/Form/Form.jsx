@@ -24,6 +24,11 @@ function Form() {
     }
   }
 
+  function removeNote(note) {
+    const newArray = itemsList.filter((item) => item.title !== note.title);
+    setItemsList(newArray);
+  }
+
   return (
     <>
       <form className="form-cadastro">
@@ -46,9 +51,10 @@ function Form() {
           labelDescription="Criar nota"
           onClick={sendForm}
           type="button"
+          disabled={!note.title && !note.description}
         />
       </form>
-      <NoteList notes={itemsList}></NoteList>
+      <NoteList notes={itemsList} remove={removeNote}></NoteList>
     </>
   );
 }
