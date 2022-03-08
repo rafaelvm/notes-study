@@ -5,7 +5,7 @@
 
 ##### `yarn install` - install dependencies
 
-#####`yarn dev` - run application
+##### `yarn dev` - run application
 
 Edit `pages/page1$.tsx` or other souce files, the playground will inflect your change instantly.
 
