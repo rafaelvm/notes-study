@@ -1,6 +1,6 @@
 ## Project in development! 
-### New features will be added
-
+### Project developed in the course of Alura.
+#### Increased use of vite, styled-components and typescript.
 
 # How to use
 
