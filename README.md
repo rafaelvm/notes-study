@@ -1,4 +1,4 @@
-## Project developed in the course of Alura.! 
+## Project developed in the course of Alura.
 #### Increased use of vite and styled-components.
 
 # How to use
