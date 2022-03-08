@@ -3,12 +3,18 @@
 
 # How to use
 
-##### `yarn install` - install dependencies
+Installation
+
+
+##### `yarn install` 
+Install dependencies
 
 ##### `yarn dev` - run application
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Edit `pages/page1$.tsx` or other souce files, the playground will inflect your change instantly.
-
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 ---
 
 Checkout [vite-plugin-react-pages](https://github.com/vitejs/vite-plugin-react-pages) for more info.
