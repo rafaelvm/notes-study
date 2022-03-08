@@ -1,9 +1,10 @@
 import React from "react";
+import { ButtonContainer } from "./styles.jsx";
 
 // type ButtonTypes = ButtonHTMLAttributes<HTMLButtonElement>;
 
 function Button({ labelDescription, ...rest }) {
-  return <button {...rest}>{labelDescription}</button>;
+  return <ButtonContainer {...rest}>{labelDescription}</ButtonContainer>;
 }
 
 export default Button;

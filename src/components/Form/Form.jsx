@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Button from "../Button/Button";
 import InputText from "../InputText/InputText";
 import Textarea from "../Textarea/Textarea";
-import "./styles.css";
 import NoteList from "../NoteList/NoteList";
+import { FormContainer } from "./styles.jsx";
 
 function Form() {
   const [note, setNote] = useState({ title: "", description: "" });
@@ -31,29 +31,25 @@ function Form() {
 
   return (
     <>
-      <form className="form-cadastro">
+      <FormContainer >
         <InputText
-          className="form-cadastro_input"
           placeholder="Escreva sua título"
           value={note.title}
           onChange={handleTitle}
         />
         <Textarea
           placeholder="Escreva sua nota"
-          className="form-cadastro_input"
           rows="16"
           value={note.description}
           onChange={handleDescription}
           maxLength="255"
         />
         <Button
-          className="form-cadastro_input form-cadastro_submit"
           labelDescription="Criar nota"
           onClick={sendForm}
           type="button"
-          disabled={!note.title && !note.description}
         />
-      </form>
+      </FormContainer>
       <NoteList notes={itemsList} remove={removeNote}></NoteList>
     </>
   );

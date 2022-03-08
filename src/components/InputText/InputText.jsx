@@ -1,5 +1,7 @@
+import { Input } from "./styles.jsx";
+
 function InputText({ ...rest }) {
-  return <input {...rest} />;
+  return <Input {...rest} />;
 }
 
 export default InputText;

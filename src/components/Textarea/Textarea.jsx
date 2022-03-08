@@ -1,5 +1,7 @@
+import { TextareaWrapper } from "./styles.jsx";
+
 function Textarea({ ...rest }) {
-  return <textarea {...rest} />;
+  return <TextareaWrapper {...rest} />;
 }
 
 export default Textarea;

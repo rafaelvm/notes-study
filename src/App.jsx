@@ -4,7 +4,7 @@ import "./index.css";
 
 function App() {
   return (
-    <div className="conteudo">
+    <div className="container">
       <Form />
     </div>
   );

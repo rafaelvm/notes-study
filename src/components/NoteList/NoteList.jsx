@@ -1,22 +1,18 @@
 import React from "react";
 import NoteCard from "../NoteCard/NoteCard";
-import "./styles.css";
+import { NoteListContainer, NoteListItem } from "./styles.jsx";
 
 function NoteList({ notes, remove }) {
   return (
-    <ul className="lista-notas">
+    <NoteListContainer>
       {notes.map((item, index) => {
         return (
-          <li
-            className="lista-notas_item"
-            key={index}
-            onClick={() => remove(item)}
-          >
+          <NoteListItem key={index} onClick={() => remove(item)}>
             <NoteCard titulo={item.title} description={item.description} />
-          </li>
+          </NoteListItem>
         );
       })}
-    </ul>
+    </NoteListContainer>
   );
 }
 
