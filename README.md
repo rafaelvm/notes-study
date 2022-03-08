@@ -3,9 +3,6 @@
 
 # How to use
 
-Installation
-
-
 ##### `yarn install` 
 Install dependencies
 
