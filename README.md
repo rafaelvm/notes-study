@@ -1,12 +1,10 @@
-## Project in development! 
-### Project developed in the course of Alura.
-#### Increased use of vite, styled-components and typescript.
+## Project developed in the course of Alura.! 
+#### Increased use of vite and styled-components.
 
 # How to use
 
-`yarn install`
-
-`yarn` You can now play with the local develop envirenment.
+`yarn install` - install dependencies
+`yarn dev` - run application
 
 Edit `pages/page1$.tsx` or other souce files, the playground will inflect your change instantly.
 
